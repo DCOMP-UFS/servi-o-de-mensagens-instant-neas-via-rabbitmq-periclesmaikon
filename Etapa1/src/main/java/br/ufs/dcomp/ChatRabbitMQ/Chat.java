@@ -13,7 +13,7 @@ public class Chat {
     public static void main(String[] argv) throws Exception {
         // Configuração do RabbitMQ
         ConnectionFactory factory = new ConnectionFactory();
-        factory.setHost("54.234.24.152"); // Alterar
+        factory.setHost("18.207.206.208"); // Alterar
         factory.setUsername("admin"); // Alterar
         factory.setPassword("password"); // Alterar
         factory.setVirtualHost("/");
