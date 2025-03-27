@@ -123,11 +123,7 @@ public class Chat {
                                 String grupo = mensagemRecebida.getGrupo();
                                 String conteudo = mensagemRecebida.getConteudo().getCorpo().toStringUtf8();
             
-                                // Evitar exibir mensagens que o próprio usuário enviou para um grupo
-                                // Este é provavelmente o problema - esta verificação pode estar impedindo a exibição
-                                // Precisamos remover ou modificar esta condição
                                 
-                                // Se foi enviada para um grupo, exiba independente de quem enviou
                                 String displayMessage;
                                 if (!grupo.isEmpty()) {
                                     displayMessage = String.format("(%s às %s) %s#%s diz: %s \n", data, hora, sender, grupo, conteudo);
